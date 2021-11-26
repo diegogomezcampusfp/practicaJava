@@ -1,0 +1,57 @@
+CONSTRUCTOR
+
+public class Cliente{
+    
+    
+    private String nombre;
+    private String ciudad;
+    private float presupuesto;
+    
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
+    
+    public void setCiudad(String ciudad){
+        this.ciudad=ciudad;
+    }
+    
+    public void setPresupuesto(float presupuesto){
+        this.presupuesto=presupuesto;
+    }
+    
+    public String getNombre (){
+     return this.nombre;
+    }
+    
+    public String getCiudad (){
+     return this.ciudad;
+    }
+    
+    public float getPresupuesto (){
+     return this.presupuesto;
+    }
+    
+    
+}
+
+MAIN
+
+public class Main{
+      public static void main(String [] args){
+    
+            Cliente cliente=new Cliente();
+            cliente.setNombre("Indra");
+            cliente.setCiudad("Sevilla");
+            cliente.setPresupuesto(10000);
+            Cliente cliente2=new Cliente();
+            cliente2.setNombre("Vass");
+            cliente2.setCiudad("Valencia");
+            cliente2.setPresupuesto(20000);
+            
+            //Concateno con + al principio y al final. Los métodos llevan paréntesis al final.
+            System.out.println("El cliente "+cliente.getNombre()+"-"+cliente.getCiudad()+" tiene un presupuesto de "+cliente.getPresupuesto()+" euros");
+            
+            System.out.println("El cliente "+cliente2.getNombre()+"-"+cliente2.getCiudad()+" tiene un presupuesto de "+cliente2.getPresupuesto()+" euros");
+            
+      }
+}
